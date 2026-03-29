@@ -1,0 +1,35 @@
+<keycloak-saml-adapter xmlns="urn:keycloak:saml:adapter"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:schemaLocation="urn:keycloak:saml:adapter https://www.keycloak.org/schema/keycloak_saml_adapter_1_7.xsd">
+    <SP entityID="helloworld"
+        sslPolicy="EXTERNAL"
+        logoutPage="/logout"
+        forceAuthentication="false"
+        isPassive="false"
+        turnOffChangeSessionIdOnLogin="false"
+        autodetectBearerOnly="false">
+        <Keys>
+            <Key signing="true">
+                <PrivateKeyPem>MIIEpQIBAAKCAQEA2qHRgh9V+8KZvJnOKxgRiaKMQvgFSjF5+GEtyBQ5SWH9q1NuRX988uIDrolPdiXEj+b7zdyreEQhL5rpNzb3Lq2y2GitdhP2EkVvGZx+ySBryXYraL6qap72VwJBw0qv+s/lb5ssdKfYpwEhfmqXKIZpAYLKxFtSF8N3+9ToIADp0ru3FDHCnNcXihN09ycsotr8y5NJB/jw7CiYjRxUXaagDFxLWXKYkB+6XIRVHN1SJi3WQ3iWcoP/xT1R9+59VHX+zTAsXlmHD+6Uddqvw8eFjamtOhvs7KbgsmuggfHzP8mxamVcXHxmG6ktSfi7cwNo8PXOccg4mcODgzu26QIDAQABAoIBAQCv5PxficJteFSjbcJ23ThO2R2rS0tGM6QDdnuUuuCT72hcjBTtiPIHnlqD8yigzyXi+FyhdOXnLjjcye7TYz9eqJR4k07q7ohMjtwhaMyAF7tgK9gkvzDv8tARlFlAOzh1uwjFz7vmZpthUQGXaT4PdoPImWd0rlvPjo1baCEQjO6T1sJ4o4WclEaH1Tqu6YERrGphTycF+unK6b3bB40OI01ofDspZr4jXl27Cl2vH+x1RUqaiajMqAMBZsHK68mgmbXSBDB5S9uo0khUgl0JBSoKVAb6RWnYns67M4QEbtEJA4twkNspJutXZJqzAtMlfbzMarR+Kut/1SstDe5hAoGBAPZzZnK1J2iBr+kL9XpbW4PHyeo0mWbWDWvKJL6L4fKOAcOMgXOOoPt1DIWJEd4up65cocHkMIcLDeKOSUYRQh6LEKE4APuAEHuyaru2HZPGcBa73QVQINHfoDfPH0O706cUaVHm7J0FDJhFm0WH8BINR620rFJ91hykXx27WED9AoGBAOMaeoPuDtFQCZQQlTtoFfcMn02fJ5lwFmI2556DmHA2ofXG8CPT8AAVzLs5J79zmwylYt5VagzoMMq8YLizz7RTR5nANj0HSCL84qU9fz7Vi+7Os5EwlaifCnMys1PUqSbVRRqE9LlFu+TM1tiLF/v3BMrZb44RkNwAQ8jY2PddAoGBANtvewutks4xkuCtHkB48a4PiRA5D1GKS97q2Pa0dFVU7esgwu6SU3IyERkhJ8Ctx+2vWvPZ6v+C7zUHPeTeXwH1DrSNugo1R/frr689g25dpNYJJc2iP+a+99hZWlwj9FtzCCe9tnZE1acLaypo1HAuVOEs2raEhs1v6aT+d6E9AoGASrGjyA6dOwS7EcLeglp6lvXE02/cQ2AVTJpIVd9sXMPrQv36b54+WpjQ7GchBpwMS/19Zijrp3Ea0yNgIH+reeDGNPB+JlZlyHQqSzTNzCnKS3Iap082ee5NLpRnXNQeClKs1ssR/nnMEbW5mCEvc0TMg7c+NJjcby97G+0Od1UCgYEAhRl7fDkZlWRBeYUUC0LyXW1LRY5OSXUg6QOp8uA+LIuuTQTmzj8UA6UMZTCI0DgxEp2PsQLjlySy+irs9l77A1VVWw6ytUfl8/BaWZmW30RtlHDZLNrhEXsQM/ti0AVH9rrafbay0TSRIbrnRN3cQCh9M87BBMgN+z6xa9rF26Q=</PrivateKeyPem>
+                <CertificatePem>MIICozCCAYsCBgGZxpjUlDANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDDApoZWxsb3dvcmxkMB4XDTI1MTAwOTAxMzAyOFoXDTM1MTAwOTAxMzIwOFowFTETMBEGA1UEAwwKaGVsbG93b3JsZDCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANqh0YIfVfvCmbyZzisYEYmijEL4BUoxefhhLcgUOUlh/atTbkV/fPLiA66JT3YlxI/m+83cq3hEIS+a6Tc29y6tsthorXYT9hJFbxmcfskga8l2K2i+qmqe9lcCQcNKr/rP5W+bLHSn2KcBIX5qlyiGaQGCysRbUhfDd/vU6CAA6dK7txQxwpzXF4oTdPcnLKLa/MuTSQf48OwomI0cVF2moAxcS1lymJAfulyEVRzdUiYt1kN4lnKD/8U9UffufVR1/s0wLF5Zhw/ulHXar8PHhY2prTob7Oym4LJroIHx8z/JsWplXFx8ZhupLUn4u3MDaPD1znHIOJnDg4M7tukCAwEAATANBgkqhkiG9w0BAQsFAAOCAQEAuVq2ahD84iqa504mYeQF7lpeJpNUp8PEYdMzQ9lkaYKt2eYwnboIIi9CnWbkGnupBaJDf49bBBLfH6e68/Fn3uJEovu7FFirPQnwTYzN2sgxEUHuSIefaQ51MFcxtj9wHRMflGcJOHt4rwZGjfNGkgs+C9p7rSNgT/gFP8RSKhGZFS66U2O9Fw84nrmNRNTMTWCqbEt52ern5FdXcZJNtAmlIuY68jDO6qwCQfFEugHHskH96YQ3cYL7BZaw5SHosej+8FRH/QfRA+wMVNGtGq6mxTJ1euTwaNYqB2NoGjM9TOUwH2N61Ez/bW7MKNR9crlxPB0jsY4R6S5To6XhmA==</CertificatePem>
+            </Key>
+        </Keys>
+        <IDP entityID="idp"
+             signatureAlgorithm="RSA_SHA256"
+             signatureCanonicalizationMethod="http://www.w3.org/2001/10/xml-exc-c14n#">
+            <SingleSignOnService signRequest="true"
+                                validateResponseSignature="true"
+                                validateAssertionSignature="false"
+                                requestBinding="POST"
+                                bindingUrl="http://127.0.0.1:8180/auth/realms/broker_saml_test/protocol/saml"
+                                assertionConsumerServiceUrl="http://127.0.0.1:8080/helloworld/saml"/>
+            <SingleLogoutService validateRequestSignature="true"
+                                validateResponseSignature="true"
+                                signRequest="true"
+                                signResponse="true"
+                                requestBinding="POST"
+                                responseBinding="POST"
+                                postBindingUrl="http://127.0.0.1:8180/auth/realms/broker_saml_test/protocol/saml"/>
+        </IDP>
+    </SP>
+</keycloak-saml-adapter>
